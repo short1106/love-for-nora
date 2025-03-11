@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love, Nora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e6ccff;
+            color: #6a0dad;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #7a1fc8;
+        }
+        .hiddenText {
+            display: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #6a0dad;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .fadeIn {
+            display: block;
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Nora,</h1>
+        <p>I know that my "I love you" might not have felt as deep as it should have. The truth is, words sometimes fail to capture the depth of my feelings. So, I made this for you—to show you just how much you mean to me. ❤️</p>
+        <p>Click the button below, and let my heart speak louder than words.</p>
+        <button onclick="showSurprise()">Click Me</button>
+        <p id="hiddenMessage" class="hiddenText">💜 Nora, you are my everything. Every laugh, every moment, every second with you is a gift I never want to take for granted. I love you more than you’ll ever know. 💜</p>
+        <p id="hiddenQuote" class="hiddenText" style="font-style: italic;">"Sometimes, words aren't enough—but love always finds a way to shine through."</p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('hiddenMessage').classList.add('fadeIn');
+            document.getElementById('hiddenQuote').classList.add('fadeIn');
+        }
+    </script>
+</body>
+</html>
